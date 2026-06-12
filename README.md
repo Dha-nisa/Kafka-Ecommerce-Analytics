@@ -282,7 +282,7 @@ python src/Phase3/completed_consumer.py
 ```
 ![Output](data/Screenshots/7.2Completed_Consumer.png)
 
-
+Filters the Completed Rides.
 
 ---
 
