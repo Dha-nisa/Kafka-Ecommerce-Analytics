@@ -308,7 +308,7 @@ python src/Phase3/top_drivers.py
 
 Displays top drivers ranked by completed rides.
 
-![Output](data/Screenshots/7.5Top_Drivers.png)
+![Output](data/Screenshots/7.5Top Drivers.png)
 ---
 
 # Screenshots
