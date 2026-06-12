@@ -73,7 +73,7 @@ pip install kafka-python
 ```bash
 docker compose up -d
 ```
-![Kafka Started](Kafka-Ecommerce-Analytics/data/Screenshots/1.Kafka_Started.png)
+![Kafka Started](data/Screenshots/1.Kafka_Started.png)
 
 
 Verify containers:
@@ -81,7 +81,7 @@ Verify containers:
 ```bash
 docker ps
 ```
-![Broker Status Check](Kafka-Ecommerce-Analytics\data\Screenshots\2.2Broker Status Check.png)
+![Broker Status Check](data/Screenshots/2.2Broker%20Status%20Check.png)
 
 ---
 
@@ -97,7 +97,7 @@ docker exec -it kafka kafka-topics \
 --partitions 3 \
 --replication-factor 1
 ```
-![Topic Created](Kafka-Ecommerce-Analytics/data/Screenshots/2.1Topic_Created.png)
+![Topic Created](data/Screenshots/2.1Topic_Created.png)
 
 ---
 
@@ -111,7 +111,7 @@ docker exec -it kafka kafka-topics \
 ecommerce.orders
 ```
 
-![Topic Created](Kafka-Ecommerce-Analytics/data/Screenshots/Phase2Topic.png)
+![Phase2 Topic Created](data/Screenshots/5.1Phase2TopicCreated.png)
 
 ## Dataset
 
@@ -140,7 +140,8 @@ Run:
 ```bash
 python src/Phase2/Producer/OrderProducer.py
 ```
-![Message Produced](Kafka-Ecommerce-Analytics/data/Screenshots/3.Message_Produced.png)
+![Message Produced](data/Screenshots/3.Message_Produced.png)
+
 ---
 
 ## Task 2.2 - Consumer
@@ -152,14 +153,15 @@ Run:
 ```bash
 python src/Phase2/Consumer/OrderConsumer.py
 ```
-![Message Consumed](Kafka-Ecommerce-Analytics/data/Screenshots/3.Message_Produced.png)
+![Message Consumed](data/Screenshots/4.Message_Consumed.png)
+
 
 ```bash
 Adding Message
 ```
-![Adding message](Kafka-Ecommerce-Analytics/data/Screenshots/5.2Adding_Message.png)
+![Adding Message](data/Screenshots/5.2Adding_Message.png)
 
-![Output Consume](Kafka-Ecommerce-Analytics/data/Screenshots/5.3Output_Consume.png)
+![Output Consume](data/Screenshots/5.3Output_Consume.png)
 
 ---
 
@@ -173,14 +175,14 @@ Terminal 1:
 ```bash
 python src/Phase2/Consumer/OrderConsumer.py
 ```
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/6.3.1Phase2 Consumer1.png)
+![Output](data/Screenshots/6.3.1Phase2%20Consumer1.png)
 
 Terminal 2:
 
 ```bash
 python src/Phase2/Consumer/OrderConsumerInstance2.py
 ```
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/6.3.2Phase2 Consumer2.png)
+![Output](data/Screenshots/6.3.2Phase2%20Consumer2.png)
 
 Demonstrates partition assignment and consumer group rebalancing.
 
@@ -193,7 +195,7 @@ Demonstrates partition assignment and consumer group rebalancing.
 ```bash
 python src/Phase2/Producer/PoisonProducer.py
 ```
-![Poison Producer](Kafka-Ecommerce-Analytics/data/Screenshots/6.4.1ProducerPoison.png)
+![Poison Producer](data/Screenshots/6.4.1ProducerPoison.png)
 ### Poison Consumer Output
 
 ```text
@@ -203,7 +205,7 @@ Raw Value: INVALID_JSON_MESSAGE
 
 Skipping message...
 ```
-![Poison Message](Kafka-Ecommerce-Analytics/data/Screenshots/6.4.2PoisonMessage.png)
+![Poison Message](data/Screenshots/6.4.2PoisonMessage.png)
 
 ---
 
@@ -270,7 +272,7 @@ Top Drivers CLI
 ```bash
 python src/Phase3/ride_producer.py
 ```
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/7.1Ride_Producer.png)
+![Output](data/Screenshots/7.1Ride_Producer.png)
 ---
 
 ## Task 3.2 - Completed Ride Consumer
@@ -278,7 +280,7 @@ python src/Phase3/ride_producer.py
 ```bash
 python src/Phase3/completed_consumer.py
 ```
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/Completed Ride.png)
+![Output](data/Screenshots/7.2Completed_Consumer.png)
 
 Filters only completed rides and forwards them to `ride.completed`.
 
@@ -295,7 +297,7 @@ Flat rate:
 ```text
 $5 per completed ride
 ```
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/7.3Driver_Earnings.png)
+![Output](data/Screenshots/7.3Driver_Earnings.png)
 ---
 
 ## Task 3.4 - Top Drivers CLI
@@ -306,7 +308,7 @@ python src/Phase3/top_drivers.py
 
 Displays top drivers ranked by completed rides.
 
-![Output](Kafka-Ecommerce-Analytics/data/Screenshots/7.3Driver_Earnings.png)
+![Output](data/Screenshots/7.5Top_Drivers.png)
 ---
 
 # Screenshots
