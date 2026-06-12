@@ -282,7 +282,7 @@ python src/Phase3/completed_consumer.py
 ```
 ![Output](data/Screenshots/7.2Completed_Consumer.png)
 
-Filters only completed rides and forwards them to `ride.completed`.
+
 
 ---
 
